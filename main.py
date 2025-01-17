@@ -1,1 +1,19 @@
-IyBtYWluLnB5CmltcG9ydCBvcwpmcm9tIGRvdGVudiBpbXBvcnQgbG9hZF9kb3RlbnYKCiMgQ2hhcmdlciBsZXMgdmFyaWFibGVzIGQnZW52aXJvbm5lbWVudApsb2FkX2RvdGVudigpCgpkZWYgbWFpbigpOgogICAgIyBSw6ljdXDDqXJlciBsZXMgdmFyaWFibGVzIGQnZW52aXJvbm5lbWVudAogICAgYXBwX25hbWUgPSBvcy5nZXRlbnYoJ0FQUF9OQU1FJykKICAgIGFwcF9lbnYgPSBvcy5nZXRlbnYoJ0FQUF9FTlYnKQogICAgCiAgICBwcmludChmIkFwcGxpY2F0aW9uOiB7YXBwX25hbWV9IikKICAgIHByaW50KGYiRW52aXJvbm5lbWVudDoge2FwcF9lbnZ9IikKICAgIAogICAgIyBWb3RyZSBjb2RlIHByaW5jaXBhbCBpY2kKICAgIHByaW50KCJIZWxsbywgV29ybGQhIikKCmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBtYWluKCk=
+import os
+from dotenv import load_dotenv
+
+# Charger les variables d'environnement
+load_dotenv()
+
+def main():
+    # Récupérer les variables d'environnement
+    app_name = os.getenv('APP_NAME')
+    app_env = os.getenv('APP_ENV')
+    
+    print(f"Application: {app_name}")
+    print(f"Environnement: {app_env}")
+    
+    # Votre code principal ici
+    print("Hello, World!")
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,2 @@
+python-dotenv==1.0.0
+# Ajoutez ici d'autres dépendances selon vos besoins
